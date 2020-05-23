@@ -1,0 +1,33 @@
+# Querying the Chinook DB
+
+## Instructions
+
+You'll be creating a `VIEW` for each of the following queries. Once you've used an appropriate `SELECT` statement and generated a result set that you feel answers the question, save that query as a `VIEW` as follows:
+
+## Queries
+
+1. Query all unique albums that are represented in the "Grunge" playlist.
+   
+   create view sol_1 as 
+   SELECT * FROM Playlist where name like '%Grunge%';  
+
+2. How much total money was billed for the TV Show genre?
+   create view sol_2 as 
+   SELECT COUNT('Total_TV') FROM Genre; 
+  
+3. In which countries does Jane Peacock represent clients?
+   create view sol_3 as 
+   SELECT Jane Peacock FROM Artists,
+   SELECT Country FROM clients; 
+  
+  
+  
+4. How many customers have no company listed?
+   create view sol_4 as 
+   SELECT no_company, COUNT(*) FROM    Customer;  
+  
+    
+
+5. What is the average amount of money spent by customers with gmail addresses? 
+   Create view sol_5 as 
+   SELECT AVG(avg_gmail_spend) FROM Customer; 
